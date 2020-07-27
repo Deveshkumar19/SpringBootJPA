@@ -30,12 +30,15 @@ public class BookController {
     @RequestMapping(value="/getBook",method=RequestMethod.GET)
     public List<Book> getBook(){
         return bookService.getBook();
-    }   
-        @RequestMapping(value="/getAllPerson",method=RequestMethod.GET)
+    }
+    @RequestMapping(value="/getAllPerson",method=RequestMethod.GET)
         public List<Person> getAllPerson() {
             return  bookService.getAllPerson();
         }
-
+    @RequestMapping(value="/findBookByCost", method = RequestMethod.GET)
+    public List<Book> getBookByCost(@RequestParam int cost){
+        return (List<Book>)bookService.findBookByCosts(cost);
+    }
 
 
 }

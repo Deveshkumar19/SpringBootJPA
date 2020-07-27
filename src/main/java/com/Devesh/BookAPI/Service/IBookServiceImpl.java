@@ -38,4 +38,11 @@ public class IBookServiceImpl implements IBookService{
         public List<Person> getAllPerson() {
                 return (List<Person>) personRepository.findAll();
         }
+
+        @Override
+        public List<Book>  findBookByCosts(int cost) {
+                return (List<Book>) bookRepository.findBookByCosts(cost);
+        }
+
+
 }

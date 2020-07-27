@@ -16,4 +16,6 @@ public interface IBookService {
 
      List<Person> getAllPerson();
 
+     List<Book> findBookByCosts(int cost);
+
 }
