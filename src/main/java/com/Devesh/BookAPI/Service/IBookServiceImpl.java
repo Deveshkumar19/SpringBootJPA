@@ -2,6 +2,8 @@ package com.Devesh.BookAPI.Service;
 
 import com.Devesh.BookAPI.Model.Book;
 import com.Devesh.BookAPI.Model.Person;
+import com.Devesh.BookAPI.Repository.BookRepository;
+import com.Devesh.BookAPI.Repository.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

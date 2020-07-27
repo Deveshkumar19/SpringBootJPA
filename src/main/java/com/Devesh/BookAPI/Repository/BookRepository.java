@@ -1,4 +1,4 @@
-package com.Devesh.BookAPI.Service;
+package com.Devesh.BookAPI.Repository;
 
 import com.Devesh.BookAPI.Model.Book;
 import org.springframework.data.repository.CrudRepository;
